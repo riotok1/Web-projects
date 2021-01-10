@@ -1,0 +1,582 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,400;0,500;1,400&family=Lato&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+/* Style for a section header */
+#header {
+  background: url("../img/headerBg.png") no-repeat center;
+  background-size: 100%;
+  padding-top: 222px;
+  padding-bottom: 222px;
+}
+#header .headerGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#header .headerGroup .headerTitle {
+  font-family: Exo;
+  font-size: 60px;
+  font-weight: 100;
+  letter-spacing: 0.04em;
+  height: 75px;
+  text-align: center;
+  color: #282828;
+  width: 760px;
+  margin-bottom: 85px;
+}
+#header .headerGroup .headerBtnPlay {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #8286a4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  transition: all 0.2s ease-in;
+}
+#header .headerGroup .headerBtnPlay:hover {
+  background-color: #000;
+}
+#header .headerGroup .headerBtnPlay .fa-play {
+  font-size: 20px;
+  color: #f5f6f8;
+}
+#header .headerGroup .headerBtnTry {
+  font-family: Exo;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  margin-bottom: 23px;
+  color: #fff;
+  padding: 20px 50px;
+  background-color: #ff6d6d;
+}
+#header .headerGroup .headerBody {
+  font-family: Exo;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: #282828;
+}
+
+/* Style for a section new design */
+#design .designGroup {
+  display: flex;
+}
+#design .designGroup .firstDesGroup {
+  display: flex;
+  flex-direction: column;
+  padding-top: 180px;
+  padding-bottom: 160px;
+  width: 60%;
+}
+#design .designGroup .firstDesGroup .predTitle {
+  font-family: Exo;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  color: #ff6d6d;
+  margin-bottom: 15px;
+}
+#design .designGroup .firstDesGroup .desTitle {
+  font-family: Exo;
+  font-weight: 500;
+  font-size: 40px;
+  letter-spacing: 0.05em;
+  line-height: 50px;
+  color: #282828;
+  width: 570px;
+  margin-bottom: 50px;
+}
+#design .designGroup .firstDesGroup .desTitle .orangeBody {
+  color: #ff6d6d;
+}
+#design .designGroup .firstDesGroup .desBody {
+  display: flex;
+  flex-direction: column;
+}
+#design .designGroup .firstDesGroup .desBody > span {
+  font-family: Exo;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  line-height: 25px;
+  width: 578px;
+}
+#design .designGroup .firstDesGroup .desBody > span:first-child {
+  margin-bottom: 35px;
+}
+#design .designGroup .secondDesGroup {
+  width: 40%;
+  background-color: #ececec;
+  position: relative;
+}
+#design .designGroup .secondDesGroup:after {
+  content: "";
+  border-bottom: 500px solid #fb8686;
+  border-left: 592px solid transparent;
+  width: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* Style for a section features*/
+#features {
+  background: url("../img/featureBg.png") no-repeat center;
+  padding-top: 130px;
+  padding-bottom: 180px;
+  background-size: 100%;
+  text-align: center;
+}
+#features .predTitleFea {
+  font-family: Exo;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  color: #fb8686;
+  margin-bottom: 15px;
+}
+#features .featuresTitle {
+  font-family: Exo;
+  font-weight: 500;
+  font-size: 40px;
+  letter-spacing: 0.05em;
+  color: #282828;
+  margin-bottom: 100px;
+}
+#features .featureTriggers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#features .featureTriggers .featuretrigger {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#features .featureTriggers .featuretrigger.first {
+  background: url("../img/firstTrigger.png") no-repeat center top;
+  padding-top: 90px;
+}
+#features .featureTriggers .featuretrigger.second {
+  background: url("../img/secondTrigger.png") no-repeat center top;
+  padding-top: 90px;
+}
+#features .featureTriggers .featuretrigger.third {
+  background: url("../img/thirdTrigger.png") no-repeat center top;
+  padding-top: 90px;
+}
+#features .featureTriggers .featuretrigger .triggerTitle {
+  font-family: Exo;
+  font-weight: 500;
+  font-size: 22px;
+  letter-spacing: 0.05em;
+  color: #282828;
+  margin-bottom: 20px;
+}
+#features .featureTriggers .featuretrigger .triggerBody {
+  font-family: Exo;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  line-height: 26px;
+  color: #282828;
+  width: 370px;
+}
+
+/* Style for a section responsive */
+#responsive {
+  padding-top: 100px;
+  position: relative;
+  overflow: hidden;
+}
+#responsive .container {
+  max-width: 1200px;
+  margin: 0;
+}
+#responsive .responsiveSecGroup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 70px;
+}
+#responsive .responsiveSecGroup img {
+  z-index: 2;
+  margin-right: 50px;
+}
+#responsive .responsiveSecGroup .responsivePodGroup {
+  padding-bottom: 50px;
+}
+#responsive .responsiveSecGroup .responsivePodGroup .resPredTitle {
+  font-family: Exo;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  color: #ff6d6d;
+  margin-bottom: 30px;
+}
+#responsive .responsiveSecGroup .responsivePodGroup .resTitle {
+  font-family: Exo;
+  font-weight: 500;
+  font-size: 40px;
+  letter-spacing: 0.05em;
+  color: #282828;
+  margin-bottom: 35px;
+}
+#responsive .responsiveSecGroup .responsivePodGroup .resTitle .resOrangeBody {
+  color: #ff6d6d;
+}
+#responsive .responsiveSecGroup .responsivePodGroup .resBody {
+  font-family: Exo;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  line-height: 20px;
+  color: #282828;
+}
+#responsive .resOrangeBlock {
+  width: 40%;
+  background-color: #ececec;
+  position: relative;
+  padding-bottom: 90px;
+}
+#responsive .resOrangeBlock:after {
+  content: "";
+  border-bottom: 600px solid #fb8686;
+  border-right: 700px solid transparent;
+  width: 0;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+/* Style for a section staff*/
+#staff {
+  background: url("../img/staffBg.png") no-repeat center;
+  background-size: 100%;
+  padding-top: 100px;
+  padding-bottom: 85px;
+}
+#staff .staffTriggers {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+#staff .staffTriggers .staffTrigger {
+  width: 33%;
+  margin-right: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#staff .staffTriggers .staffTrigger:last-child {
+  margin-right: 0px;
+}
+#staff .staffTriggers .staffTrigger .fas {
+  font-size: 45px;
+  color: #fff;
+  margin-bottom: 25px;
+}
+#staff .staffTriggers .staffTrigger .staffTriggerTitle {
+  font-family: Exo;
+  font-weight: 500;
+  font-size: 22px;
+  letter-spacing: 0.05em;
+  color: #fff;
+  margin-bottom: 12px;
+}
+#staff .staffTriggers .staffTrigger .staffPosTitle {
+  font-family: Exo;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  color: #ff6d6d;
+  margin-bottom: 30px;
+}
+#staff .staffTriggers .staffTrigger .staffTriggerBody {
+  font-family: Exo;
+  font-style: italic;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  line-height: 25px;
+  color: #fff;
+}
+#staff .staffFonts {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Style for a section macInfo */
+#macInfo {
+  padding-top: 107px;
+  text-align: center;
+}
+#macInfo .macGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#macInfo .macGroup .macPredTitle {
+  font-family: Exo;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  color: #ff6d6d;
+  margin-bottom: 15px;
+}
+#macInfo .macGroup .macTitle {
+  font-family: Exo;
+  font-weight: 500;
+  font-size: 40px;
+  letter-spacing: 0.05em;
+  color: #282828;
+  margin-bottom: 50px;
+}
+#macInfo .macGroup .macBody {
+  font-family: Exo;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  line-height: 20px;
+  color: #282828;
+  width: 650px;
+  margin: auto;
+  margin-bottom: 110px;
+}
+
+/* Style for a section registr */
+#registr {
+  padding-top: 100px;
+  padding-bottom: 90px;
+  background: #323969;
+  text-align: center;
+}
+#registr .registrPredTitle {
+  font-family: Exo;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  color: #ff6d6d;
+  margin-bottom: 30px;
+}
+#registr .registrTitle {
+  font-family: Exo;
+  font-weight: 500;
+  font-size: 40px;
+  letter-spacing: 0.05em;
+  color: #fff;
+  margin-bottom: 95px;
+}
+#registr .registrForm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+#registr .registrForm > input {
+  font-family: Exo;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  color: #fff;
+  padding: 15px 80px 15px 25px;
+  border: 1px solid #fff;
+  background-color: #464c77;
+  border-radius: 3px;
+}
+#registr .registrForm > input::placeholder {
+  color: #fff;
+}
+#registr .registrForm .registrBtn {
+  font-family: Exo;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  color: #fff;
+  background-color: #ff6d6d;
+  padding: 15px 0;
+  width: 230px;
+  text-align: center;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+#registr .registrBody {
+  font-family: Exo;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  color: #fff;
+}
+#registr .registrBody .under {
+  text-decoration: underline;
+}
+
+/* Style for a footer */
+#footer .container {
+  padding-top: 85px;
+  padding-bottom: 100px;
+}
+#footer .fotterGroups {
+  display: flex;
+  justify-content: space-between;
+}
+#footer .fotterGroups .footerItem {
+  display: flex;
+  flex-direction: column;
+}
+#footer .fotterGroups .footerItem .itemTitle {
+  font-family: Lato;
+  font-size: 27px;
+  letter-spacing: 0.05em;
+  color: #282828;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+#footer .fotterGroups .footerItem .itemTitle img {
+  width: 38px;
+  height: 40px;
+}
+#footer .fotterGroups .footerItem .itemBody {
+  display: flex;
+  flex-direction: column;
+  font-family: Exo;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  color: #282828;
+}
+#footer .fotterGroups .footerItem .itemBody span {
+  margin-bottom: 13px;
+}
+#footer .fotterGroups .footerItem .itemBody span:last-child {
+  margin-bottom: 0px;
+}
+#footer .fotterGroups .footerItem.second .itemTitle, #footer .fotterGroups .footerItem.third .itemTitle, #footer .fotterGroups .footerItem.forth .itemTitle {
+  margin-bottom: 19px;
+}
+#footer .fotterGroups .footerItem .itemBody a {
+  font-family: Exo;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  color: #282828;
+  margin-bottom: 13px;
+  transition: all 0.2s linear;
+}
+#footer .fotterGroups .footerItem .itemBody a:hover {
+  color: #323969;
+}
+#footer .fotterGroups .footerItem.forth form {
+  display: flex;
+}
+#footer .fotterGroups .footerItem.forth form.example input[type=text] {
+  padding: 15px 30px 15px 27px;
+  font-family: Exo;
+  letter-spacing: 0.05em;
+  font-size: 16px;
+  color: #282828;
+  border: 1px solid grey;
+  border-right: 0px;
+  justify-content: flex-start;
+  width: 80%;
+  background: #f6f6f6;
+  border-radius: 3px;
+  margin-right: -2px;
+}
+#footer .fotterGroups .footerItem.forth form .footerBtn {
+  width: 20%;
+  padding: 11px;
+  background: #ff6d6d;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  border-radius: 3px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s linear;
+}
+#footer .fotterGroups .footerItem.forth form .footerBtn:hover {
+  background: #323969;
+}

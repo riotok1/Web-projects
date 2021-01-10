@@ -1,0 +1,256 @@
+@import "null.scss";
+@import url('https://fonts.googleapis.com/css2?family=Caladea:wght@700&family=Roboto:wght@400;700&display=swap');
+
+body{
+	overflow-x: hidden;
+}
+
+.container{
+	max-width: 1200px;
+	margin: auto;
+}
+
+#header{
+	padding-top: 65px;
+	padding-bottom: 320px;
+	background: url('../img/headerBg.png') no-repeat bottom;
+	background-size: 100%;
+	.navigationGroup{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		padding-right: 65px;
+		margin-bottom: 120px;
+		.burgerWrapper{
+			cursor: pointer;
+			width: 30px;
+			height: 30px;
+			padding-top: 11px;
+			margin-bottom: 35px;
+			.burgerMenu{
+				position: relative;
+				width: 30px;
+				height: 6px;
+				background-color: #333333;
+				&:before{
+					content: "";
+					position: absolute;
+					width: 30px;
+					height: 6px;
+					top: -10px;
+					background-color: #333333;
+					transition: transform .2s ease-in, top .2s linear .2s;
+				}
+				&:after{
+					content: "";
+					position: absolute;
+					width: 30px;
+					height: 6px;
+					top: 10px;
+					background-color: #333333;
+					transition: transform .2s ease-in, top .2s linear .2s;
+				}
+				&.burgerActive{
+					background: transparent;
+					&:before{
+						top: 0;
+						transform: rotate(-45deg);
+						transition: top .2s linear, transform .2s ease-in .2s;
+					}
+					&:after{
+						top: 0;
+						transform: rotate(45deg);
+						transition: top .2s linear, transform .2s ease-in .2s;
+					}
+				}
+			}
+		}
+		.socialMenu{
+			margin-right: -1000px;
+			transition: all .5s ease-in;
+			&.socMenuActive{
+				margin-right: 0px;
+			}
+			.socialNav{
+				display: flex;
+				flex-direction: column;
+				.navItem{
+					margin-bottom: 25px;
+					.navLink{
+						.fab, .fas{
+							font-size: 20px;
+							color: #7f7f7f;
+						}
+					}
+				}
+			}
+		}
+	}
+	& .container{
+		padding-bottom: 320px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		.mainTitle{
+			font-family: Caladea;
+			font-weight: bold;
+			letter-spacing: 0.05em;
+			font-size: 45px;
+			color: #333333;
+			margin-bottom: 45px;
+			.titleRed{
+				color: #d63c37;
+			}
+		}
+		.headerBody{
+			font-family: Roboto;
+			letter-spacing: 0.05em;
+			line-height: 35px;
+			font-size: 18px;
+			color: #707070;
+			width: 1210px;
+		}
+	}
+}
+
+#mark{
+	padding-top: 320px;
+	.markGroup{
+		display: flex;
+		.markImg{
+			padding-top: 230px;
+			margin-right: 30px;
+		}
+		.markContent{
+			.contentTitle{
+				font-family: Caladea;
+				font-weight: bold;
+				letter-spacing: 0.05em;
+				font-size: 36px;
+				color: #333;
+				margin-bottom: 50px;
+				.titleRed{
+					color: #d63c37;
+					text-decoration: underline;
+				}
+			}
+			.contentBody{
+				display: flex;
+				padding-left: 50px;
+				.contentIcons{
+					display: flex;
+					flex-direction: column;
+					padding-top: 163px;
+					margin-right: 30px;
+					.far{
+						color: #d63c37;
+						margin-bottom: 177px;
+						&:nth-child(2){
+							margin-bottom: 210px;
+						}
+					}
+				}
+				.contentItems{
+					.contentItem{
+						display: flex;
+						flex-direction: column;
+						font-size: Roboto;
+						letter-spacing: 0.05em;
+						line-height: 35px;
+						font-size: 18px;
+						color: #666666;
+						margin-bottom: 50px;
+						span{
+							&:first-child{
+								color: #d63c37;
+							}
+							&:last-child{
+								width: 450px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#red{
+	background-color: #d63c37;
+	padding: 310px 0px;
+	display: flex;	
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	.redTitle{
+		font-family: Caladea;
+		font-weight: bold;
+		letter-spacing: 0.05em;
+		font-size: 36px;
+		color: #fcfcfc;
+		text-align: right;
+		text-decoration: underline;
+		margin-bottom: 90px;
+	}
+	.redTriggers{
+		display: flex;
+		.trigger{
+			text-align: right;
+			margin-bottom: 100px;
+			&>div{
+				margin-right: 25px;
+			}
+			.triggerIcon{
+				width: 56px;
+				height: 56px;
+				border: 4px solid #fff;
+				border-radius: 50%;
+				cursor: pointer;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				transition: all .4s linear;
+				&:hover{
+					background: #fff;
+					& .fas, .fab{
+						color: #d63c37;
+					}
+				}
+				.fas, .fab{
+					font-size: 18px;
+					color: #fff;
+				}
+			}
+			.triggerTitle{
+				font-family: Roboto;
+				font-weight: bold;
+				letter-spacing: 0.05em;
+				font-size: 20px;
+				color: #333333;
+				margin-bottom: 25px;
+			}
+			.triggerBody{
+				font-family: Roboto;
+				letter-spacing: 0.05em;
+				line-height: 30px;
+				font-size: 15px;
+				color: #333333;
+				width: 456px;
+			}
+		}
+		.firstGroupTrgiggers{
+			.trigger{
+				display: flex;
+				align-items: center;
+			}
+		}
+		.secondGroupTriggers{
+			.trigger{
+				display: flex;
+				align-items: center;
+			}
+		}
+	}
+}

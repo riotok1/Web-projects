@@ -1,0 +1,1002 @@
+@import "null.scss";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap");
+
+.container {
+	max-width: 1250px;
+	margin: auto;
+}
+
+$titleColor: #333333;
+$bodyColor: #4c4c4c;
+$redColor: #ff2d2d;
+
+/* Style for a header */
+#header {
+	padding-top: 30px;
+	padding-bottom: 105px;
+	background-color: #f6f2f2;
+	& #nav {
+		background: #313030;
+		margin-bottom: 100px;
+		& .navGroup {
+			display: flex;
+			justify-content: center;
+			& .navItem {
+				padding: 40px 25px;
+				transition: all 0.2s linear;
+				cursor: pointer;
+				&:hover {
+					background-color: $redColor;
+				}
+				& .navLink {
+					font-family: Open Sans;
+					font-weight: bold;
+					line-height: 24px;
+					letter-spacing: 0.05em;
+					color: #fff;
+				}
+			}
+		}
+	}
+	& #offer {
+		& .offerGroup {
+			display: flex;
+			justify-content: space-between;
+			& .leftOfferPart {
+				& .offerTitle {
+					font-family: Open Sans;
+					font-weight: 800;
+					font-size: 60px;
+					line-height: 72px;
+					letter-spacing: 0.05em;
+					color: $titleColor;
+					width: 595px;
+					margin-bottom: 37px;
+				}
+				& .offerBody {
+					font-family: Open Sans;
+					font-size: 16px;
+					line-height: 25px;
+					letter-spacing: 0.05em;
+					color: #494848;
+					width: 555px;
+					margin-bottom: 60px;
+				}
+				& .offerBtn {
+					font-family: Open Sans;
+					font-weight: bold;
+					font-size: 18px;
+					letter-spacing: 0.05em;
+					color: #fff;
+					padding: 13px 58px;
+					background-color: $redColor;
+					border: 2px solid $redColor;
+					border-radius: 5px;
+					transition: all 0.2s linear;
+					&:hover {
+						background-color: #fff;
+						color: $redColor;
+					}
+				}
+			}
+			& .rightOfferPart {
+				& .player {
+					height: 360px;
+					width: 550px;
+					position: relative;
+					background-color: #c4c0b1;
+					border-bottom: 1px solid $redColor;
+					border-radius: 2px;
+					box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.3);
+					.headerVideo {
+						position: absolute;
+						top: 0;
+						left: 0;
+						height: 100%;
+						width: 100%;
+						object-fit: cover;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Style for a s-title and s-body on the all section */
+.sectionTitle {
+	font-family: Open Sans;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+	line-height: 55px;
+	font-size: 42px;
+	text-transform: uppercase;
+	color: $titleColor;
+	width: 600px;
+	margin-bottom: 50px;
+}
+.sectionBody {
+	font-family: Open Sans;
+	font-size: 16px;
+	letter-spacing: 0.05em;
+	line-height: 24px;
+	color: $bodyColor;
+	width: 515px;
+	margin-bottom: 50px;
+}
+.sectionPale {
+	height: 2px;
+	width: 140px;
+	background: $redColor;
+}
+
+/* Style for a section provide */
+#provide {
+	padding-top: 115px;
+	padding-bottom: 105px;
+	& .container {
+		border-bottom: 2px solid #ececec;
+	}
+	& .provideGroups {
+		display: flex;
+		justify-content: space-between;
+		& .leftProvideGroup {
+			& .provideBtn {
+				font-family: Open Sans;
+				font-weight: bold;
+				font-size: 18px;
+				letter-spacing: 0.05em;
+				line-height: 24px;
+				color: $redColor;
+				border: 2px solid $redColor;
+				padding: 15px 50px;
+				border-radius: 5px;
+				cursor: pointer;
+				transition: all 0.2s linear;
+				&:hover {
+					background-color: $redColor;
+					color: #fff;
+				}
+			}
+		}
+		& .rightProvideGroup {
+			display: flex;
+			justify-content: space-between;
+			flex-direction: row;
+			flex-wrap: wrap;
+			& .provideGroupItem {
+				width: 48%;
+				margin-bottom: 50px;
+				& .fas,
+				& .far {
+					font-size: 35px;
+					color: $redColor;
+					margin-bottom: 30px;
+				}
+				& .provideItemTitle {
+					font-family: Open Sans;
+					font-weight: 600;
+					font-size: 24px;
+					letter-spacing: 0.05em;
+					color: $bodyColor;
+					margin-bottom: 20px;
+				}
+				& .provideItemBody {
+					font-family: Open Sans;
+					font-size: 16px;
+					letter-spacing: 0.05em;
+					line-height: 30px;
+					color: $bodyColor;
+				}
+			}
+		}
+	}
+}
+
+/* Style for a section products*/
+#products {
+	text-align: center;
+	& .baseGroup {
+		margin-bottom: 90px;
+		& .sectionTitle {
+			margin: auto;
+			margin-bottom: 35px;
+		}
+		& .sectionBody {
+			margin: auto;
+			margin-bottom: 30px;
+		}
+		& .sectionPale {
+			height: 2px;
+			width: 140px;
+			background: $redColor;
+			margin: auto;
+		}
+	}
+	& .tabs {
+		margin-bottom: 120px;
+		& .tabTitles {
+			display: flex;
+			justify-content: center;
+			margin-bottom: 65px;
+			& .tabItem {
+				font-family: Open Sans;
+				font-weight: 600;
+				font-size: 22px;
+				letter-spacing: 0.05em;
+				color: $bodyColor;
+				cursor: pointer;
+				transition: all 0.2s linear;
+				&.active,
+				&:hover {
+					color: $redColor;
+				}
+				margin-right: 60px;
+				&:last-child {
+					margin-right: 0px;
+				}
+			}
+		}
+		& .tabContent {
+			display: none;
+			justify-content: space-between;
+			flex-direction: row;
+			flex-wrap: wrap;
+			&.content-active {
+				display: flex;
+			}
+			& .tabContentItem {
+				width: 23%;
+				height: 290px;
+				background-color: #f5f0dd;
+				cursor: pointer;
+				margin-bottom: 20px;
+				position: relative;
+				&:hover .itemContent {
+					z-index: 1;
+					opacity: 1;
+				}
+				& .itemContent {
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					background-color: #e5e5e5;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					& .itemContentTitle {
+						font-family: Open Sans;
+						font-weight: 600;
+						letter-spacing: 0.05em;
+						font-size: 30px;
+						color: $redColor;
+					}
+					z-index: 0;
+					opacity: 0;
+					transition: all 0.2s ease-in;
+				}
+			}
+		}
+	}
+}
+
+/* Style for a section team */
+#team {
+	padding-bottom: 110px;
+	& .baseGroup {
+		margin-bottom: 70px;
+		& .sectionTitle {
+			margin-bottom: 38px;
+		}
+		& .sectionBody {
+			margin-bottom: 30px;
+			padding-left: 10px;
+		}
+		& .sectionPale {
+			margin-left: 10px;
+		}
+	}
+	.teamTabs {
+		display: flex;
+		justify-content: center;
+		.teamTabContent {
+			display: none;
+			background-color: yellow;
+			margin-right: 50px;
+			cursor: pointer;
+		}
+		#MARK,
+		#WAUGH {
+			display: block;
+		}
+		#MARK,
+		#JACK,
+		#JENNIFER,
+		#LIZ {
+			width: 25%;
+			height: 460px;
+			background-color: #f5f0dd;
+		}
+		.teamTabsBtn {
+			display: flex;
+			flex-direction: column;
+			width: 75%;
+			.workSkills {
+				& .workSkillsItem {
+					display: none;
+					& .workTitle {
+						font-family: Open Sans;
+						font-weight: 600;
+						font-size: 30px;
+						letter-spacing: 0.05em;
+						color: $titleColor;
+						margin-bottom: 35px;
+					}
+					& .workBody {
+						font-family: Open Sans;
+						font-size: 16px;
+						letter-spacing: 0.05em;
+						line-height: 25px;
+						color: $bodyColor;
+						width: 700px;
+						margin-bottom: 45px;
+					}
+					.workSocial {
+						& .socialItem {
+							font-family: Open Sans;
+							font-style: italic;
+							font-size: 18px;
+							letter-spacing: 0.05em;
+							color: $titleColor;
+							transition: all 0.2s linear;
+							margin-right: 30px;
+							&:hover {
+								color: $redColor;
+							}
+							&:last-child {
+								margin-right: 0px;
+							}
+						}
+					}
+				}
+			}
+			.workBtns {
+				display: flex;
+				margin-top: auto;
+				& .workSotBtn {
+					width: 25%;
+					height: 230px;
+					background-color: #f5f0dd;
+					cursor: pointer;
+					transition: all 0.2s linear;
+					margin-right: 30px;
+					position: relative;
+					.workSotContent {
+						font-family: Open Sans;
+						font-weight: 600;
+						font-size: 18px;
+						letter-spacing: 0.05em;
+						color: #fff;
+						background-color: #7a786e;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						padding: 10px 0px;
+						position: absolute;
+						transition: all 0.2s linear;
+						z-index: 0;
+						opacity: 0;
+						bottom: 0;
+						width: 100%;
+					}
+					&:hover .workSotContent {
+						z-index: 1;
+						opacity: 1;
+					}
+					&.active .workSotContent {
+						z-index: 1;
+						opacity: 1;
+					}
+					&:last-child {
+						margin-right: 0px;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Style for a section email */
+#email {
+	background-color: #f5f0dd;
+	padding: 140px 0px;
+	text-align: center;
+	.emailTitle {
+		font-family: Open Sans;
+		font-weight: bold;
+		font-size: 42px;
+		letter-spacing: 0.05em;
+		color: #fff;
+		margin-bottom: 25px;
+	}
+	.emailBody {
+		font-family: Open Sans;
+		font-size: 16px;
+		letter-spacing: 0.05em;
+		color: #fff;
+		margin-bottom: 60px;
+	}
+	.emailForm {
+		display: flex;
+		justify-content: center;
+		& .emailAddress {
+			font-family: Open Sans;
+			font-size: 16px;
+			letter-spacing: 0.02em;
+			color: $bodyColor;
+			padding: 30px 360px 30px 30px;
+			border-radius: 6px;
+			margin-right: 20px;
+			&:placeholder {
+				color: $bodyColor;
+			}
+		}
+		& .emailBtn {
+			font-family: Open Sans;
+			font-weight: bold;
+			letter-spacing: 0.04em;
+			font-size: 18px;
+			color: #fff;
+			background-color: $redColor;
+			padding: 28px 48px;
+			border: 2px solid $redColor;
+			border-radius: 6px;
+			transition: all 0.2s linear;
+			&:hover {
+				background-color: #fff;
+				color: $redColor;
+			}
+		}
+	}
+}
+
+/* Style for a section registration */
+#registration {
+	padding: 110px 0px;
+	.baseGroup {
+		& .sectionPale {
+			margin-bottom: 70px;
+		}
+	}
+	.allRegistrGroup {
+		display: flex;
+		justify-content: space-between;
+		.registrForm {
+			display: flex;
+			flex-direction: column;
+			.nameMail {
+				display: flex;
+				margin-bottom: 45px;
+				& input {
+					font-family: Open Sans;
+					letter-spacing: 0.05em;
+					font-size: 18px;
+					color: $bodyColor;
+					padding: 30px 100px 30px 30px;
+					background: #e5e5e5;
+					border-radius: 15px;
+					&:first-child {
+						margin-right: 55px;
+					}
+				}
+			}
+			& .message {
+				font-family: Open Sans;
+				font-size: 18px;
+				letter-spacing: 0.05em;
+				color: $bodyColor;
+				padding: 30px 480px 200px 30px;
+				background: #e5e5e5;
+				border-radius: 15px;
+				margin-bottom: 40px;
+			}
+			& .registrBtn {
+				font-family: Open Sans;
+				font-weight: bold;
+				letter-spacing: 0.05em;
+				font-size: 18px;
+				color: #fff;
+				padding: 28px 0px;
+				background-color: $redColor;
+				border: 2px solid $redColor;
+				border-radius: 15px;
+				display: flex;
+				justify-content: center;
+				alugn-items: center;
+				transition: all 0.2s linear;
+				&:hover {
+					background-color: #fff;
+					color: $redColor;
+				}
+			}
+		}
+		.contactInfo {
+			background-color: #2d2d2d;
+			display: flex;
+			flex-direction: column;
+			align-items: left;
+			justify-content: center;
+			padding-left: 75px;
+			padding-right: 120px;
+			& .contactTitle {
+				font-family: Open Sans;
+				font-weight: bold;
+				letter-spacing: 0.05em;
+				font-size: 18px;
+				color: #fff;
+				margin-bottom: 40px;
+			}
+			& .contactDate {
+				display: flex;
+				flex-direction: column;
+				font-family: Open Sans;
+				font-size: 16px;
+				line-height: 25px;
+				letter-spacing: 0.05em;
+				span {
+					margin-bottom: 28px;
+					&:first-child {
+						width: 320px;
+					}
+					&:last-child {
+						margin-bottom: 0px;
+					}
+					a {
+						color: #d5d5d5;
+						transition: all 0.2s linear;
+						&:hover {
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Style for a footer */
+#footer {
+	background-color: #313030;
+	padding: 40px 0px;
+	.footerGroup {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.footerTitle {
+			font-family: Open Sans;
+			font-size: 16px;
+			letter-spacing: 0.05em;
+			color: #d5d5d5;
+		}
+		.footerSocial {
+			display: flex;
+			align-items: center;
+			.socialItem {
+				margin-right: 20px;
+				width: 40px;
+				height: 40px;
+				background-color: #fff;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-radius: 50%;
+				transition: all 0.2s linear;
+				&:hover {
+					background: $redColor;
+				}
+				&:hover .fab {
+					color: #fff;
+				}
+				&:last-child {
+					margin-right: 0px;
+				}
+				.fab {
+					font-size: 20px;
+					color: #313030;
+				}
+			}
+		}
+	}
+}
+
+/* Responsive */
+
+/* 993 - 1200 */
+@media screen and (max-width: 1200px) {
+	.container {
+		max-width: 970px;
+	}
+
+	//Header
+	.offerGroup {
+		align-items: center !important;
+		.leftOfferPart {
+			width: 400px;
+			height: 380px !important;
+			.offerTitle {
+				font-size: 40px !important;
+				width: 400px !important;
+			}
+			.offerBody {
+				width: 400px !important;
+			}
+		}
+		.rightOfferPart {
+			.player {
+				width: 500px !important;
+			}
+		}
+	}
+
+	//Registration
+	.nameMail {
+		& > input {
+			padding-right: 30px !important;
+		}
+	}
+	.message {
+		padding-right: 300px !important;
+	}
+	.contactInfo {
+		padding: 0px 45px !important;
+	}
+}
+
+/* 769 - 992 */
+@media screen and (max-width: 992px) {
+	.container {
+		max-width: 750px;
+	}
+
+	//Header
+	#header {
+		.offerGroup {
+			.leftOfferPart {
+				width: 300px !important;
+				height: 350px !important;
+				.offerTitle {
+					font-size: 30px !important;
+					line-height: 49px !important;
+				}
+				.offerBody {
+					font-size: 12px !important;
+					width: 300px !important;
+				}
+			}
+			.rightOfferPart {
+				.player {
+					width: 400px !important;
+					height: 370px !important;
+				}
+			}
+		}
+	}
+
+	//Base Group
+	.sectionTitle {
+		font-size: 25px !important;
+		line-height: 49px !important;
+	}
+	.sectionBody {
+		font-size: 13px !important;
+	}
+
+	//Provide
+	#provide {
+		.leftProvideGroup {
+			.sectionTitle {
+				width: 350px !important;
+				margin-bottom: 30px !important;
+			}
+			.sectionBody {
+				width: 300px !important;
+			}
+		}
+		.provideItemTitle {
+			font-size: 20px !important;
+		}
+	}
+
+	//Products
+	#products {
+		.sectionTitle {
+			margin-bottom: 25px !important;
+		}
+		.tabItem {
+			font-size: 15px !important;
+		}
+		.tabs {
+			.tabContent {
+				.tabContentItem {
+					height: 240px !important;
+				}
+			}
+		}
+	}
+
+	//Team
+	#team {
+		.workTitle {
+			font-size: 25px !important;
+		}
+		.workBody {
+			width: 450px !important;
+			font-size: 13px !important;
+		}
+		.workSotTitle {
+			font-size: 10px !important;
+		}
+	}
+
+	//Email
+	#email {
+		.emailTitle {
+			font-size: 35px !important;
+			line-height: 49px !important;
+		}
+	}
+
+	//Registration
+	#registration {
+		.sectionTitle {
+			margin-bottom: 25px !important;
+		}
+		.nameMail {
+			& > input {
+				font-size: 13px !important;
+				padding-right: 0px !important;
+				&:first-child {
+					margin-right: 40px !important;
+				}
+			}
+		}
+		.message {
+			font-size: 13px !important;
+			padding-right: 200px !important;
+		}
+		.contactInfo {
+			padding-right: 45px !important;
+			.contactTitle {
+				font-size: 15px !important;
+			}
+			.contactDate {
+				font-size: 13px !important;
+			}
+		}
+	}
+}
+
+/* 577 - 768 */
+@media screen and (max-width: 768px) {
+	.container {
+		max-width: 540px;
+	}
+
+	//Header
+	#header {
+		#nav {
+			margin-bottom: 0px !important;
+		}
+		#offer {
+			.offerGroup {
+				display: flex;
+				justify-content: center;
+				flex-direction: column;
+				text-align: center;
+				.leftOfferPart {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					.offerTitle {
+						width: 600px !important;
+						margin-bottom: 25px !important;
+					}
+					.offerBody {
+						width: 400px !important;
+						margin-bottom: 25px !important;
+					}
+				}
+				.rightOfferPart {
+					.player {
+						width: 500px !important;
+					}
+				}
+			}
+		}
+	}
+
+	//Provide
+	#provide {
+		.provideGroups {
+			flex-direction: column;
+			.leftProvideGroup {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				text-align: center;
+				align-items: center;
+				margin-bottom: 50px;
+				.sectionTitle {
+					font-size: 20px !important;
+					line-height: 30px !important;
+					width: 600px !important;
+				}
+				.sectionBody {
+					font-size: 10px !important;
+					margin-bottom: 30px !important;
+				}
+				.provideBtn {
+					font-size: 15px !important;
+					padding: 13px 48px !important;
+				}
+			}
+			.rightProvideGroup {
+				align-items: center;
+				.provideGroupItem {
+					margin-right: 10px !important;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					text-align: center;
+					width: 45% !important;
+					.provideItemTitle {
+						font-size: 13px !important;
+					}
+					.provideItemBody {
+						font-size: 12px !important;
+					}
+					.fas,
+					.far {
+						font-size: 20px !important;
+					}
+					.provideItemTitle {
+						font-size: 15px !important;
+					}
+				}
+			}
+		}
+	}
+
+	//Products
+	#products {
+		.baseGroup {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			width: 600px !important;
+			.sectionTitle {
+				font-size: 20px !important;
+				margin-bottom: 20px !important;
+			}
+		}
+		.tabs {
+			.tabItem {
+				font-size: 10px !important;
+				margin-right: 40px !important;
+			}
+			.tabContent {
+				.tabContentItem {
+					height: 180px !important;
+					.itemContentTitle {
+						font-size: 15px !important;
+					}
+				}
+			}
+		}
+	}
+
+	//Team
+	#team {
+		#MARK,
+		#JACK,
+		#JENNIFER,
+		#LIZ {
+			height: 350px !important;
+			margin-right: 20px;
+		}
+		.teamTabsBtn {
+			.workSkills {
+				.workSkillsItem {
+					.workTitle {
+						font-size: 17px !important;
+						margin-bottom: 20px !important;
+					}
+					.workBody {
+						font-size: 10px !important;
+						margin-bottom: 25px !important;
+					}
+					.workSocial {
+						.socialItem {
+							font-size: 14px !important;
+						}
+					}
+				}
+			}
+			.workSotBtn {
+				height: 170px !important;
+				margin-right: 10px !important;
+				.workSotContent {
+					.workSotTitle {
+						font-size: 8px !important;
+						text-align: center;
+						line-height: 15px !important;
+					}
+				}
+			}
+		}
+	}
+
+	//Email
+	#email {
+		.emailTitle {
+			font-size: 25px !important;
+			line-height: 35px !important;
+		}
+		.emailBody {
+			font-size: 14px !important;
+		}
+		.emailForm {
+			& > input {
+				font-size: 13px !important;
+				padding: 25px 330px 25px 25px !important;
+			}
+			.emailBtn {
+				font-size: 13px !important;
+			}
+		}
+	}
+
+	//Registration, Footer
+	#registration {
+		padding-bottom: 0px;
+		.allRegistrGroup {
+			flex-direction: column;
+			.registrForm {
+				margin-bottom: 50px;
+			}
+			.contactInfo {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+				padding: 50px 0px !important;
+				border-bottom: 3px solid #313030;
+			}
+		}
+	}
+	#footer {
+		background-color: #2d2d2d;
+		.footerTitle {
+			font-size: 12px !important;
+		}
+		.footerSocial {
+			.socialItem {
+				width: 25px !important;
+				height: 25px !important;
+				.fab {
+					font-size: 15px !important;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.container {
+		max-width: 100%;
+	}
+}

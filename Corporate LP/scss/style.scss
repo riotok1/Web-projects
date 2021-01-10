@@ -1,0 +1,521 @@
+@import "null.scss";
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,400;0,500;1,400&family=Lato&display=swap');
+
+.container{
+	max-width: 1170px;
+	margin: auto;
+}
+
+/* Style for a section header */
+#header{
+	background: url('../img/headerBg.png') no-repeat center;
+	background-size: 100%;
+	padding-top: 222px;
+	padding-bottom: 222px;
+	& .headerGroup{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		& .headerTitle{
+			font-family: Exo;
+			font-size: 60px;
+			font-weight: 100;
+			letter-spacing: 0.04em;
+			height: 75px;
+			text-align: center;
+			color: #282828;
+			width: 760px;
+			margin-bottom: 85px;
+		}
+		& .headerBtnPlay{
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			background-color: #8286a4;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 40px;
+			transition: all .2s ease-in;
+			&:hover{
+				background-color: #000;
+			}
+			& .fa-play{
+				font-size: 20px;
+				color: #f5f6f8;
+			}
+		}
+		& .headerBtnTry{
+			font-family: Exo;
+			font-weight: 400;
+			font-size: 16px;
+			letter-spacing: 0.05em;
+			margin-bottom: 23px;
+			color: #fff;
+			padding: 20px 50px;
+			background-color: #ff6d6d;
+		}
+		& .headerBody{
+			font-family: Exo;
+			font-size: 14px;
+			font-weight: 400;
+			letter-spacing: 0.04em;
+			color: #282828;
+		}
+	}
+}
+
+/* Style for a section new design */
+#design{
+	& .designGroup{
+		display: flex;
+		& .firstDesGroup{
+			display: flex;
+			flex-direction: column;
+			padding-top: 180px;
+			padding-bottom: 160px;
+			width: 60%;
+			& .predTitle{
+				font-family: Exo;
+				font-weight: 500;
+				font-size: 16px;
+				letter-spacing: 0.05em;
+				color: #ff6d6d;
+				margin-bottom: 15px;
+			}
+			& .desTitle{
+				font-family: Exo;
+				font-weight: 500;
+				font-size: 40px;
+				letter-spacing: 0.05em;
+				line-height: 50px;
+				color: #282828;
+				width: 570px;
+				margin-bottom: 50px;
+				& .orangeBody{
+					color: #ff6d6d;
+				}
+			}
+			& .desBody{
+				display: flex;
+				flex-direction: column;
+				&>span{
+					font-family: Exo;
+					font-weight: 500;
+					font-size: 16px;
+					letter-spacing: 0.05em;
+					line-height: 25px;
+					width: 578px;
+					&:first-child{
+						margin-bottom: 35px;
+					}
+				}
+			}
+		}
+		& .secondDesGroup{
+			width: 40%;
+			background-color: #ececec;
+			position: relative;
+			&:after{
+				content: "";
+				border-bottom: 500px solid #fb8686;
+				border-left: 592px solid transparent;
+			    width: 0;
+			    position: absolute;
+			    bottom: 0;
+			    right: 0;
+			}
+		}
+	}
+}
+
+/* Style for a section features*/
+#features{
+	background: url('../img/featureBg.png') no-repeat center;
+	padding-top: 130px;
+	padding-bottom: 180px;
+	background-size: 100%;
+	text-align: center;
+	& .predTitleFea{
+		font-family: Exo;
+		font-weight: 500;
+		font-size: 16px;
+		letter-spacing: 0.05em;
+		color: #fb8686;
+		margin-bottom: 15px;
+	}
+	& .featuresTitle{
+		font-family: Exo;
+		font-weight: 500;
+		font-size: 40px;
+		letter-spacing: 0.05em;
+		color: #282828;
+		margin-bottom: 100px;
+	}
+	& .featureTriggers{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		& .featuretrigger{
+			width: 30%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			&.first{
+				background: url('../img/firstTrigger.png') no-repeat center top;
+				padding-top: 90px;
+			}
+			&.second{
+				background: url('../img/secondTrigger.png') no-repeat center top;
+				padding-top: 90px;
+			}
+			&.third{
+				background: url('../img/thirdTrigger.png') no-repeat center top;
+				padding-top: 90px;
+			}
+			& .triggerTitle{
+				font-family: Exo;
+				font-weight: 500;
+				font-size: 22px;
+				letter-spacing: 0.05em;
+				color: #282828;
+				margin-bottom: 20px;
+			}
+			& .triggerBody{
+				font-family: Exo;
+				font-weight: 500;
+				font-size: 16px;
+				letter-spacing: 0.05em;
+				line-height: 26px;
+				color: #282828;
+				width: 370px;
+			}
+		}
+	}
+}
+
+/* Style for a section responsive */
+#responsive{
+	padding-top: 100px;
+	position: relative;
+	overflow: hidden;
+	& .container{
+		max-width: 1200px;
+		margin: 0;
+	}
+	& .responsiveSecGroup{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-left: 70px;
+		& img{
+			z-index: 2;
+			margin-right: 50px;
+		}
+		& .responsivePodGroup{
+			padding-bottom: 50px;
+			& .resPredTitle{
+				font-family: Exo;
+				font-weight: 500;
+				font-size: 16px;
+				letter-spacing: 0.05em;
+				color: #ff6d6d;
+				margin-bottom: 30px;
+			}
+			& .resTitle{
+				font-family: Exo;
+				font-weight: 500;
+				font-size: 40px;
+				letter-spacing: 0.05em;
+				color: #282828;
+				margin-bottom: 35px;
+				& .resOrangeBody{
+					color: #ff6d6d;
+				}
+			}
+			& .resBody{
+				font-family: Exo;
+				font-weight: 500;
+				font-size: 16px;
+				letter-spacing: 0.05em;
+				line-height: 20px;
+				color: #282828;
+			}
+		}
+	}
+	& .resOrangeBlock{
+		width: 40%;
+		background-color: #ececec;
+		position: relative;
+		padding-bottom: 90px;
+		&:after{
+			content: "";
+			border-bottom: 600px solid #fb8686;
+			border-right: 700px solid transparent;
+		    width: 0;
+		    position: absolute;
+			bottom: 0;
+			z-index: 1;
+		}
+	}
+}
+
+/* Style for a section staff*/
+#staff{
+	background: url('../img/staffBg.png') no-repeat center;
+	background-size: 100%;
+	padding-top: 100px;
+	padding-bottom: 85px;
+	& .staffTriggers{
+		display: flex;
+		justify-content: space-between;
+		text-align: center;
+		align-items: center;
+		margin-bottom: 100px;
+		& .staffTrigger{
+			width: 33%;
+			margin-right: 60px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			&:last-child{
+				margin-right: 0px;
+			}
+			& .fas{
+				font-size: 45px;
+				color: #fff;
+				margin-bottom: 25px;
+			}
+			& .staffTriggerTitle{
+				font-family: Exo;
+				font-weight: 500;
+				font-size: 22px;
+				letter-spacing: 0.05em;
+				color: #fff;
+				margin-bottom: 12px;
+			}
+			& .staffPosTitle{
+				font-family: Exo;
+				font-weight: 500;
+				font-size: 16px;
+				letter-spacing: 0.05em;
+				color: #ff6d6d;
+				margin-bottom: 30px;
+			}
+			& .staffTriggerBody{
+				font-family: Exo;
+				font-style: italic;
+				font-size: 16px;
+				letter-spacing: 0.05em;
+				line-height: 25px;
+				color: #fff;
+
+			}
+		}
+	}
+	& .staffFonts{
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+/* Style for a section macInfo */
+#macInfo{
+	padding-top: 107px;
+	text-align: center;
+	& .macGroup{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		& .macPredTitle{
+			font-family: Exo;
+			font-weight: 500;
+			font-size: 16px;
+			letter-spacing: 0.05em;
+			color: #ff6d6d;
+			margin-bottom:  15px;
+		}
+		& .macTitle{
+			font-family: Exo;
+			font-weight: 500;
+			font-size: 40px;
+			letter-spacing: 0.05em;
+			color: #282828;
+			margin-bottom: 50px;
+		}
+		& .macBody{
+			font-family: Exo;
+			font-weight: 500;
+			font-size: 16px;
+			letter-spacing: 0.05em;
+			line-height: 20px;
+			color: #282828;
+			width: 650px;
+			margin: auto;
+			margin-bottom: 110px;
+		}
+	}
+}
+
+/* Style for a section registr */
+#registr{
+	padding-top: 100px;
+	padding-bottom: 90px;
+	background: #323969;
+	text-align: center;
+	& .registrPredTitle{
+		font-family: Exo;
+		font-weight: 500;
+		font-size: 16px;
+		letter-spacing: 0.05em;
+		color: #ff6d6d;
+		margin-bottom: 30px;
+	}
+	& .registrTitle{
+		font-family: Exo;
+		font-weight: 500;
+		font-size: 40px;
+		letter-spacing: 0.05em;
+		color: #fff;
+		margin-bottom: 95px;
+	}
+	& .registrForm{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 50px;
+		&>input{
+			font-family: Exo;
+			font-size: 16px;
+			letter-spacing: 0.05em;
+			color: #fff;
+			padding: 15px 80px 15px 25px;
+			border: 1px solid #fff;
+			background-color: #464c77;
+			border-radius: 3px;
+			&::placeholder{
+				color: #fff;
+			}
+		}
+		& .registrBtn{
+			font-family: Exo;
+			font-size: 16px;
+			letter-spacing: 0.05em;
+			color: #fff;
+			background-color: #ff6d6d;
+			padding: 15px 0;
+			width: 230px;
+			text-align: center;
+			box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+		}
+	}
+	& .registrBody{
+		font-family: Exo;
+		font-size: 16px;
+		letter-spacing: 0.05em;
+		color: #fff;
+		& .under{
+			text-decoration: underline;
+		}
+	}
+}
+
+/* Style for a footer */
+#footer{
+	.container{
+		padding-top: 85px;
+		padding-bottom: 100px;
+	}
+	& .fotterGroups{
+		display: flex;
+		justify-content: space-between;
+		& .footerItem{
+			display: flex;
+			flex-direction: column;
+			& .itemTitle{
+				font-family: Lato;
+				font-size: 27px;
+				letter-spacing: 0.05em;
+				color: #282828;
+				display: flex;
+				align-items: center;
+				margin-bottom: 10px;
+				& img{
+					width: 38px;
+					height: 40px;
+				}
+			}
+			& .itemBody{
+				display: flex;
+				flex-direction: column;
+				font-family: Exo;
+				font-weight: 500;
+				font-size: 14px;
+				letter-spacing: 0.05em;
+				color: #282828;
+				& span{
+					margin-bottom: 13px;
+					&:last-child{
+						margin-bottom: 0px;
+					}
+				}
+			}
+			&.second, &.third, &.forth{
+				&  .itemTitle{
+					margin-bottom: 19px;
+				}
+			}
+			& .itemBody{
+				& a{
+					font-family: Exo;
+					font-weight: 500;
+					font-size: 14px;
+					letter-spacing: 0.05em;
+					color: #282828;
+					margin-bottom: 13px;
+					transition: all .2s linear;
+					&:hover{
+						color: #323969;
+					}
+				}
+			}
+			&.forth{
+				form{
+					display: flex;
+					&.example input[type=text]{
+						padding: 15px 30px 15px 27px;
+						font-family: Exo;
+						letter-spacing: 0.05em;
+						font-size: 16px;
+						color: #282828;
+						border: 1px solid grey;
+						border-right: 0px;
+						justify-content: flex-start;
+						width: 80%;
+						background: #f6f6f6;
+						border-radius: 3px;
+						margin-right: -2px;
+					}
+					& .footerBtn{
+						width: 20%;
+						padding: 11px;
+						background: #ff6d6d;
+						color: white;
+						font-size: 25px;
+						cursor: pointer;
+						border-radius: 3px;
+						display: flex;
+						text-align: center;
+						justify-content: center;
+						align-items: center;
+						transition: all .2s linear;
+						&:hover{
+							background: #323969;
+						}
+					}
+				}
+			}
+		}
+	}
+}

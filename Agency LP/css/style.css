@@ -1,0 +1,973 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+.container {
+  max-width: 1250px;
+  margin: auto;
+}
+
+/* Style for a header */
+#header {
+  padding-top: 30px;
+  padding-bottom: 105px;
+  background-color: #f6f2f2;
+}
+#header #nav {
+  background: #313030;
+  margin-bottom: 100px;
+}
+#header #nav .navGroup {
+  display: flex;
+  justify-content: center;
+}
+#header #nav .navGroup .navItem {
+  padding: 40px 25px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+#header #nav .navGroup .navItem:hover {
+  background-color: #ff2d2d;
+}
+#header #nav .navGroup .navItem .navLink {
+  font-family: Open Sans;
+  font-weight: bold;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  color: #fff;
+}
+#header #offer .offerGroup {
+  display: flex;
+  justify-content: space-between;
+}
+#header #offer .offerGroup .leftOfferPart .offerTitle {
+  font-family: Open Sans;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 72px;
+  letter-spacing: 0.05em;
+  color: #333333;
+  width: 595px;
+  margin-bottom: 37px;
+}
+#header #offer .offerGroup .leftOfferPart .offerBody {
+  font-family: Open Sans;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  color: #494848;
+  width: 555px;
+  margin-bottom: 60px;
+}
+#header #offer .offerGroup .leftOfferPart .offerBtn {
+  font-family: Open Sans;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  color: #fff;
+  padding: 13px 58px;
+  background-color: #ff2d2d;
+  border: 2px solid #ff2d2d;
+  border-radius: 5px;
+  transition: all 0.2s linear;
+}
+#header #offer .offerGroup .leftOfferPart .offerBtn:hover {
+  background-color: #fff;
+  color: #ff2d2d;
+}
+#header #offer .offerGroup .rightOfferPart .player {
+  height: 360px;
+  width: 550px;
+  position: relative;
+  background-color: #c4c0b1;
+  border-bottom: 1px solid #ff2d2d;
+  border-radius: 2px;
+  box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.3);
+}
+#header #offer .offerGroup .rightOfferPart .player .headerVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Style for a s-title and s-body on the all section */
+.sectionTitle {
+  font-family: Open Sans;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  line-height: 55px;
+  font-size: 42px;
+  text-transform: uppercase;
+  color: #333333;
+  width: 600px;
+  margin-bottom: 50px;
+}
+
+.sectionBody {
+  font-family: Open Sans;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  line-height: 24px;
+  color: #4c4c4c;
+  width: 515px;
+  margin-bottom: 50px;
+}
+
+.sectionPale {
+  height: 2px;
+  width: 140px;
+  background: #ff2d2d;
+}
+
+/* Style for a section provide */
+#provide {
+  padding-top: 115px;
+  padding-bottom: 105px;
+}
+#provide .container {
+  border-bottom: 2px solid #ececec;
+}
+#provide .provideGroups {
+  display: flex;
+  justify-content: space-between;
+}
+#provide .provideGroups .leftProvideGroup .provideBtn {
+  font-family: Open Sans;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  line-height: 24px;
+  color: #ff2d2d;
+  border: 2px solid #ff2d2d;
+  padding: 15px 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+#provide .provideGroups .leftProvideGroup .provideBtn:hover {
+  background-color: #ff2d2d;
+  color: #fff;
+}
+#provide .provideGroups .rightProvideGroup {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#provide .provideGroups .rightProvideGroup .provideGroupItem {
+  width: 48%;
+  margin-bottom: 50px;
+}
+#provide .provideGroups .rightProvideGroup .provideGroupItem .fas, #provide .provideGroups .rightProvideGroup .provideGroupItem .far {
+  font-size: 35px;
+  color: #ff2d2d;
+  margin-bottom: 30px;
+}
+#provide .provideGroups .rightProvideGroup .provideGroupItem .provideItemTitle {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 0.05em;
+  color: #4c4c4c;
+  margin-bottom: 20px;
+}
+#provide .provideGroups .rightProvideGroup .provideGroupItem .provideItemBody {
+  font-family: Open Sans;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  line-height: 30px;
+  color: #4c4c4c;
+}
+
+/* Style for a section products*/
+#products {
+  text-align: center;
+}
+#products .baseGroup {
+  margin-bottom: 90px;
+}
+#products .baseGroup .sectionTitle {
+  margin: auto;
+  margin-bottom: 35px;
+}
+#products .baseGroup .sectionBody {
+  margin: auto;
+  margin-bottom: 30px;
+}
+#products .baseGroup .sectionPale {
+  height: 2px;
+  width: 140px;
+  background: #ff2d2d;
+  margin: auto;
+}
+#products .tabs {
+  margin-bottom: 120px;
+}
+#products .tabs .tabTitles {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 65px;
+}
+#products .tabs .tabTitles .tabItem {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: 0.05em;
+  color: #4c4c4c;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  margin-right: 60px;
+}
+#products .tabs .tabTitles .tabItem.active, #products .tabs .tabTitles .tabItem:hover {
+  color: #ff2d2d;
+}
+#products .tabs .tabTitles .tabItem:last-child {
+  margin-right: 0px;
+}
+#products .tabs .tabContent {
+  display: none;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#products .tabs .tabContent.content-active {
+  display: flex;
+}
+#products .tabs .tabContent .tabContentItem {
+  width: 23%;
+  height: 290px;
+  background-color: #f5f0dd;
+  cursor: pointer;
+  margin-bottom: 20px;
+  position: relative;
+}
+#products .tabs .tabContent .tabContentItem:hover .itemContent {
+  z-index: 1;
+  opacity: 1;
+}
+#products .tabs .tabContent .tabContentItem .itemContent {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+  opacity: 0;
+  transition: all 0.2s ease-in;
+}
+#products .tabs .tabContent .tabContentItem .itemContent .itemContentTitle {
+  font-family: Open Sans;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  font-size: 30px;
+  color: #ff2d2d;
+}
+
+/* Style for a section team */
+#team {
+  padding-bottom: 110px;
+}
+#team .baseGroup {
+  margin-bottom: 70px;
+}
+#team .baseGroup .sectionTitle {
+  margin-bottom: 38px;
+}
+#team .baseGroup .sectionBody {
+  margin-bottom: 30px;
+  padding-left: 10px;
+}
+#team .baseGroup .sectionPale {
+  margin-left: 10px;
+}
+#team .teamTabs {
+  display: flex;
+  justify-content: center;
+}
+#team .teamTabs .teamTabContent {
+  display: none;
+  background-color: yellow;
+  margin-right: 50px;
+  cursor: pointer;
+}
+#team .teamTabs #MARK, #team .teamTabs #WAUGH {
+  display: block;
+}
+#team .teamTabs #MARK, #team .teamTabs #JACK, #team .teamTabs #JENNIFER, #team .teamTabs #LIZ {
+  width: 25%;
+  height: 460px;
+  background-color: #f5f0dd;
+}
+#team .teamTabs .teamTabsBtn {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+#team .teamTabs .teamTabsBtn .workSkills .workSkillsItem {
+  display: none;
+}
+#team .teamTabs .teamTabsBtn .workSkills .workSkillsItem .workTitle {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 0.05em;
+  color: #333333;
+  margin-bottom: 35px;
+}
+#team .teamTabs .teamTabsBtn .workSkills .workSkillsItem .workBody {
+  font-family: Open Sans;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  line-height: 25px;
+  color: #4c4c4c;
+  width: 700px;
+  margin-bottom: 45px;
+}
+#team .teamTabs .teamTabsBtn .workSkills .workSkillsItem .workSocial .socialItem {
+  font-family: Open Sans;
+  font-style: italic;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  color: #333333;
+  transition: all 0.2s linear;
+  margin-right: 30px;
+}
+#team .teamTabs .teamTabsBtn .workSkills .workSkillsItem .workSocial .socialItem:hover {
+  color: #ff2d2d;
+}
+#team .teamTabs .teamTabsBtn .workSkills .workSkillsItem .workSocial .socialItem:last-child {
+  margin-right: 0px;
+}
+#team .teamTabs .teamTabsBtn .workBtns {
+  display: flex;
+  margin-top: auto;
+}
+#team .teamTabs .teamTabsBtn .workBtns .workSotBtn {
+  width: 25%;
+  height: 230px;
+  background-color: #f5f0dd;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  margin-right: 30px;
+  position: relative;
+}
+#team .teamTabs .teamTabsBtn .workBtns .workSotBtn .workSotContent {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  color: #fff;
+  background-color: #7a786e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+  position: absolute;
+  transition: all 0.2s linear;
+  z-index: 0;
+  opacity: 0;
+  bottom: 0;
+  width: 100%;
+}
+#team .teamTabs .teamTabsBtn .workBtns .workSotBtn:hover .workSotContent {
+  z-index: 1;
+  opacity: 1;
+}
+#team .teamTabs .teamTabsBtn .workBtns .workSotBtn.active .workSotContent {
+  z-index: 1;
+  opacity: 1;
+}
+#team .teamTabs .teamTabsBtn .workBtns .workSotBtn:last-child {
+  margin-right: 0px;
+}
+
+/* Style for a section email */
+#email {
+  background-color: #f5f0dd;
+  padding: 140px 0px;
+  text-align: center;
+}
+#email .emailTitle {
+  font-family: Open Sans;
+  font-weight: bold;
+  font-size: 42px;
+  letter-spacing: 0.05em;
+  color: #fff;
+  margin-bottom: 25px;
+}
+#email .emailBody {
+  font-family: Open Sans;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  color: #fff;
+  margin-bottom: 60px;
+}
+#email .emailForm {
+  display: flex;
+  justify-content: center;
+}
+#email .emailForm .emailAddress {
+  font-family: Open Sans;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: #4c4c4c;
+  padding: 30px 360px 30px 30px;
+  border-radius: 6px;
+  margin-right: 20px;
+}
+#email .emailForm .emailAddress:placeholder {
+  color: #4c4c4c;
+}
+#email .emailForm .emailBtn {
+  font-family: Open Sans;
+  font-weight: bold;
+  letter-spacing: 0.04em;
+  font-size: 18px;
+  color: #fff;
+  background-color: #ff2d2d;
+  padding: 28px 48px;
+  border: 2px solid #ff2d2d;
+  border-radius: 6px;
+  transition: all 0.2s linear;
+}
+#email .emailForm .emailBtn:hover {
+  background-color: #fff;
+  color: #ff2d2d;
+}
+
+/* Style for a section registration */
+#registration {
+  padding: 110px 0px;
+}
+#registration .baseGroup .sectionPale {
+  margin-bottom: 70px;
+}
+#registration .allRegistrGroup {
+  display: flex;
+  justify-content: space-between;
+}
+#registration .allRegistrGroup .registrForm {
+  display: flex;
+  flex-direction: column;
+}
+#registration .allRegistrGroup .registrForm .nameMail {
+  display: flex;
+  margin-bottom: 45px;
+}
+#registration .allRegistrGroup .registrForm .nameMail input {
+  font-family: Open Sans;
+  letter-spacing: 0.05em;
+  font-size: 18px;
+  color: #4c4c4c;
+  padding: 30px 100px 30px 30px;
+  background: #e5e5e5;
+  border-radius: 15px;
+}
+#registration .allRegistrGroup .registrForm .nameMail input:first-child {
+  margin-right: 55px;
+}
+#registration .allRegistrGroup .registrForm .message {
+  font-family: Open Sans;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  color: #4c4c4c;
+  padding: 30px 480px 200px 30px;
+  background: #e5e5e5;
+  border-radius: 15px;
+  margin-bottom: 40px;
+}
+#registration .allRegistrGroup .registrForm .registrBtn {
+  font-family: Open Sans;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  font-size: 18px;
+  color: #fff;
+  padding: 28px 0px;
+  background-color: #ff2d2d;
+  border: 2px solid #ff2d2d;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  alugn-items: center;
+  transition: all 0.2s linear;
+}
+#registration .allRegistrGroup .registrForm .registrBtn:hover {
+  background-color: #fff;
+  color: #ff2d2d;
+}
+#registration .allRegistrGroup .contactInfo {
+  background-color: #2d2d2d;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  padding-left: 75px;
+  padding-right: 120px;
+}
+#registration .allRegistrGroup .contactInfo .contactTitle {
+  font-family: Open Sans;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+#registration .allRegistrGroup .contactInfo .contactDate {
+  display: flex;
+  flex-direction: column;
+  font-family: Open Sans;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+}
+#registration .allRegistrGroup .contactInfo .contactDate span {
+  margin-bottom: 28px;
+}
+#registration .allRegistrGroup .contactInfo .contactDate span:first-child {
+  width: 320px;
+}
+#registration .allRegistrGroup .contactInfo .contactDate span:last-child {
+  margin-bottom: 0px;
+}
+#registration .allRegistrGroup .contactInfo .contactDate span a {
+  color: #d5d5d5;
+  transition: all 0.2s linear;
+}
+#registration .allRegistrGroup .contactInfo .contactDate span a:hover {
+  color: #fff;
+}
+
+/* Style for a footer */
+#footer {
+  background-color: #313030;
+  padding: 40px 0px;
+}
+#footer .footerGroup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#footer .footerGroup .footerTitle {
+  font-family: Open Sans;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  color: #d5d5d5;
+}
+#footer .footerGroup .footerSocial {
+  display: flex;
+  align-items: center;
+}
+#footer .footerGroup .footerSocial .socialItem {
+  margin-right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all 0.2s linear;
+}
+#footer .footerGroup .footerSocial .socialItem:hover {
+  background: #ff2d2d;
+}
+#footer .footerGroup .footerSocial .socialItem:hover .fab {
+  color: #fff;
+}
+#footer .footerGroup .footerSocial .socialItem:last-child {
+  margin-right: 0px;
+}
+#footer .footerGroup .footerSocial .socialItem .fab {
+  font-size: 20px;
+  color: #313030;
+}
+
+/* Responsive */
+/* 993 - 1200 */
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+
+  .offerGroup {
+    align-items: center !important;
+  }
+  .offerGroup .leftOfferPart {
+    width: 400px;
+    height: 380px !important;
+  }
+  .offerGroup .leftOfferPart .offerTitle {
+    font-size: 40px !important;
+    width: 400px !important;
+  }
+  .offerGroup .leftOfferPart .offerBody {
+    width: 400px !important;
+  }
+  .offerGroup .rightOfferPart .player {
+    width: 500px !important;
+  }
+
+  .nameMail > input {
+    padding-right: 30px !important;
+  }
+
+  .message {
+    padding-right: 300px !important;
+  }
+
+  .contactInfo {
+    padding: 0px 45px !important;
+  }
+}
+/* 769 - 992 */
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+
+  #header .offerGroup .leftOfferPart {
+    width: 300px !important;
+    height: 350px !important;
+  }
+  #header .offerGroup .leftOfferPart .offerTitle {
+    font-size: 30px !important;
+    line-height: 49px !important;
+  }
+  #header .offerGroup .leftOfferPart .offerBody {
+    font-size: 12px !important;
+    width: 300px !important;
+  }
+  #header .offerGroup .rightOfferPart .player {
+    width: 400px !important;
+    height: 370px !important;
+  }
+
+  .sectionTitle {
+    font-size: 25px !important;
+    line-height: 49px !important;
+  }
+
+  .sectionBody {
+    font-size: 13px !important;
+  }
+
+  #provide .leftProvideGroup .sectionTitle {
+    width: 350px !important;
+    margin-bottom: 30px !important;
+  }
+  #provide .leftProvideGroup .sectionBody {
+    width: 300px !important;
+  }
+  #provide .provideItemTitle {
+    font-size: 20px !important;
+  }
+
+  #products .sectionTitle {
+    margin-bottom: 25px !important;
+  }
+  #products .tabItem {
+    font-size: 15px !important;
+  }
+  #products .tabs .tabContent .tabContentItem {
+    height: 240px !important;
+  }
+
+  #team .workTitle {
+    font-size: 25px !important;
+  }
+  #team .workBody {
+    width: 450px !important;
+    font-size: 13px !important;
+  }
+  #team .workSotTitle {
+    font-size: 10px !important;
+  }
+
+  #email .emailTitle {
+    font-size: 35px !important;
+    line-height: 49px !important;
+  }
+
+  #registration .sectionTitle {
+    margin-bottom: 25px !important;
+  }
+  #registration .nameMail > input {
+    font-size: 13px !important;
+    padding-right: 0px !important;
+  }
+  #registration .nameMail > input:first-child {
+    margin-right: 40px !important;
+  }
+  #registration .message {
+    font-size: 13px !important;
+    padding-right: 200px !important;
+  }
+  #registration .contactInfo {
+    padding-right: 45px !important;
+  }
+  #registration .contactInfo .contactTitle {
+    font-size: 15px !important;
+  }
+  #registration .contactInfo .contactDate {
+    font-size: 13px !important;
+  }
+}
+/* 577 - 768 */
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+
+  #header #nav {
+    margin-bottom: 0px !important;
+  }
+  #header #offer .offerGroup {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  #header #offer .offerGroup .leftOfferPart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #header #offer .offerGroup .leftOfferPart .offerTitle {
+    width: 600px !important;
+    margin-bottom: 25px !important;
+  }
+  #header #offer .offerGroup .leftOfferPart .offerBody {
+    width: 400px !important;
+    margin-bottom: 25px !important;
+  }
+  #header #offer .offerGroup .rightOfferPart .player {
+    width: 500px !important;
+  }
+
+  #provide .provideGroups {
+    flex-direction: column;
+  }
+  #provide .provideGroups .leftProvideGroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  #provide .provideGroups .leftProvideGroup .sectionTitle {
+    font-size: 20px !important;
+    line-height: 30px !important;
+    width: 600px !important;
+  }
+  #provide .provideGroups .leftProvideGroup .sectionBody {
+    font-size: 10px !important;
+    margin-bottom: 30px !important;
+  }
+  #provide .provideGroups .leftProvideGroup .provideBtn {
+    font-size: 15px !important;
+    padding: 13px 48px !important;
+  }
+  #provide .provideGroups .rightProvideGroup {
+    align-items: center;
+  }
+  #provide .provideGroups .rightProvideGroup .provideGroupItem {
+    margin-right: 10px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 45% !important;
+  }
+  #provide .provideGroups .rightProvideGroup .provideGroupItem .provideItemTitle {
+    font-size: 13px !important;
+  }
+  #provide .provideGroups .rightProvideGroup .provideGroupItem .provideItemBody {
+    font-size: 12px !important;
+  }
+  #provide .provideGroups .rightProvideGroup .provideGroupItem .fas, #provide .provideGroups .rightProvideGroup .provideGroupItem .far {
+    font-size: 20px !important;
+  }
+  #provide .provideGroups .rightProvideGroup .provideGroupItem .provideItemTitle {
+    font-size: 15px !important;
+  }
+
+  #products .baseGroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 600px !important;
+  }
+  #products .baseGroup .sectionTitle {
+    font-size: 20px !important;
+    margin-bottom: 20px !important;
+  }
+  #products .tabs .tabItem {
+    font-size: 10px !important;
+    margin-right: 40px !important;
+  }
+  #products .tabs .tabContent .tabContentItem {
+    height: 180px !important;
+  }
+  #products .tabs .tabContent .tabContentItem .itemContentTitle {
+    font-size: 15px !important;
+  }
+
+  #team #MARK, #team #JACK, #team #JENNIFER, #team #LIZ {
+    height: 350px !important;
+    margin-right: 20px;
+  }
+  #team .teamTabsBtn .workSkills .workSkillsItem .workTitle {
+    font-size: 17px !important;
+    margin-bottom: 20px !important;
+  }
+  #team .teamTabsBtn .workSkills .workSkillsItem .workBody {
+    font-size: 10px !important;
+    margin-bottom: 25px !important;
+  }
+  #team .teamTabsBtn .workSkills .workSkillsItem .workSocial .socialItem {
+    font-size: 14px !important;
+  }
+  #team .teamTabsBtn .workSotBtn {
+    height: 170px !important;
+    margin-right: 10px !important;
+  }
+  #team .teamTabsBtn .workSotBtn .workSotContent .workSotTitle {
+    font-size: 8px !important;
+    text-align: center;
+    line-height: 15px !important;
+  }
+
+  #email .emailTitle {
+    font-size: 25px !important;
+    line-height: 35px !important;
+  }
+  #email .emailBody {
+    font-size: 14px !important;
+  }
+  #email .emailForm > input {
+    font-size: 13px !important;
+    padding: 25px 330px 25px 25px !important;
+  }
+  #email .emailForm .emailBtn {
+    font-size: 13px !important;
+  }
+
+  #registration {
+    padding-bottom: 0px;
+  }
+  #registration .allRegistrGroup {
+    flex-direction: column;
+  }
+  #registration .allRegistrGroup .registrForm {
+    margin-bottom: 50px;
+  }
+  #registration .allRegistrGroup .contactInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0px !important;
+    border-bottom: 3px solid #313030;
+  }
+
+  #footer {
+    background-color: #2d2d2d;
+  }
+  #footer .footerTitle {
+    font-size: 12px !important;
+  }
+  #footer .footerSocial .socialItem {
+    width: 25px !important;
+    height: 25px !important;
+  }
+  #footer .footerSocial .socialItem .fab {
+    font-size: 15px !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+}
