@@ -1,0 +1,947 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:wght@400;500;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+.container {
+  max-width: 1220px;
+  margin: auto;
+}
+
+.sectionTitle {
+  font-family: Montserrat;
+  font-weight: 900;
+  font-size: 37px;
+  color: #000;
+}
+
+#header {
+  background: url("../img/headerBg.png") no-repeat center;
+  background-size: 100%;
+  padding-bottom: 295px;
+}
+#header .navigationGroup {
+  padding: 25px 0px 25px 0px;
+  background: rgba(22, 29, 57, 0.7);
+}
+#header .navigationGroup .firstNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #6c7284;
+  margin-bottom: 15px;
+}
+#header .navigationGroup .firstNav .contactGroup {
+  display: flex;
+}
+#header .navigationGroup .firstNav .contactGroup .phone {
+  margin-right: 100px;
+}
+#header .navigationGroup .firstNav .contactGroup .phone .fas {
+  margin-right: 5px;
+  color: #ffdd00;
+}
+#header .navigationGroup .firstNav .contactGroup .mail .fas {
+  margin-right: 5px;
+  color: #ffdd00;
+}
+#header .navigationGroup .firstNav .contactGroup a {
+  font-family: Timew New Roman;
+  font-size: 14px;
+  color: #fff;
+}
+#header .navigationGroup .firstNav .autorizationGroup {
+  display: flex;
+  align-items: center;
+}
+#header .navigationGroup .firstNav .autorizationGroup .socialGroup {
+  display: flex;
+  margin-right: 80px;
+}
+#header .navigationGroup .firstNav .autorizationGroup .socialGroup a {
+  margin-right: 20px;
+}
+#header .navigationGroup .firstNav .autorizationGroup .socialGroup a:last-child {
+  margin-right: 0px;
+}
+#header .navigationGroup .firstNav .autorizationGroup .socialGroup a .fab {
+  font-size: 17px;
+  color: #ffdd00;
+}
+#header .navigationGroup .firstNav .autorizationGroup .logPass a {
+  font-family: Montserrat;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  margin-right: 30px;
+}
+#header .navigationGroup .firstNav .autorizationGroup .logPass a:last-child {
+  margin-right: 0px;
+}
+#header .navigationGroup .firstNav .autorizationGroup .logPass a .fas {
+  font-size: 17px;
+  color: #ffdd00;
+  margin-right: 5px;
+}
+#header .navigationGroup .secondNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#header .navigationGroup .secondNav .navigationNav {
+  display: flex;
+}
+#header .navigationGroup .secondNav .navigationNav .navItem {
+  margin-right: 50px;
+  border-bottom: 2px solid transparent;
+}
+#header .navigationGroup .secondNav .navigationNav .navItem:last-child {
+  margin-right: 0px;
+}
+#header .navigationGroup .secondNav .navigationNav .navItem .navLink {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+}
+#header .offer {
+  padding-top: 180px;
+}
+#header .offer .offerGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+#header .offer .offerGroup .offerTitle {
+  font-family: Montserrat;
+  font-weight: 900;
+  font-size: 75px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 45px;
+}
+#header .offer .offerGroup .offerTitle span {
+  margin-bottom: 25px;
+}
+#header .offer .offerGroup .offerTitle span:last-child {
+  margin-bottom: 0px;
+  font-weight: 700;
+  font-size: 50px;
+}
+#header .offer .offerGroup .offerBody {
+  font-family: Lato;
+  line-height: 25px;
+  font-weight: 600;
+  font-size: 17px;
+  color: #fff;
+  width: 670px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+#header .offer .offerGroup .offerBtn {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 15px;
+  color: #000;
+  background: #eed638;
+  width: 215px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  transition: all 0.2s linear;
+}
+#header .offer .offerGroup .offerBtn:hover {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #eed638;
+}
+
+#hotels {
+  padding: 75px 0px 80px 0px;
+  background: url("../img/hotelsBg.png") no-repeat center;
+  background-size: 100%;
+}
+#hotels .sectionTitle {
+  text-align: center;
+  margin-bottom: 60px;
+}
+#hotels .hotelsForm {
+  display: flex;
+  position: relative;
+}
+#hotels .hotelsForm .inputGroup {
+  display: flex;
+  flex-direction: column;
+}
+#hotels .hotelsForm .inputGroup .inputTitle {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 20px;
+}
+#hotels .hotelsForm .inputGroup input {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 17px;
+  color: #000;
+  border-radius: 5px;
+  padding: 14px 0px 14px 10px;
+  width: 200px;
+  margin-right: 20px;
+}
+#hotels .hotelsForm .inputGroup input::placeholder {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 17px;
+  color: #7e7e7e;
+}
+#hotels .hotelsForm .btnGroup .formBtn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 15px;
+  color: #fff;
+  background: #4a4a4a;
+  width: 180px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+#trusted .trustedGroup {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: url("../img/secTrusted.png") no-repeat center;
+  background-size: 100%;
+}
+#trusted .trustedGroup .firstGroup {
+  width: 50%;
+}
+#trusted .trustedGroup .firstGroup img {
+  width: 100%;
+}
+#trusted .trustedGroup .secGroup {
+  padding-left: 60px;
+}
+#trusted .trustedGroup .secGroup .sectionTitle {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 45px;
+}
+#trusted .trustedGroup .secGroup .sectionTitle span:first-child {
+  margin-bottom: 15px;
+}
+#trusted .trustedGroup .secGroup .sectionTitle span:last-child {
+  font-weight: 400;
+}
+#trusted .trustedGroup .secGroup .sectionBody {
+  font-family: Lato;
+  font-weight: 600;
+  line-height: 22px;
+  font-size: 17px;
+  width: 540px;
+  margin-bottom: 45px;
+}
+#trusted .trustedGroup .secGroup .trustedUl .trustItem {
+  display: flex;
+  align-items: center;
+  font-family: Lato;
+  font-weight: 600;
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+#trusted .trustedGroup .secGroup .trustedUl .trustItem .fas {
+  font-size: 20px;
+  color: #00a4ff;
+  margin-right: 20px;
+}
+#trusted .trustedGroup .secGroup .trustedUl .trustItem p {
+  line-height: 25px;
+  width: 400px;
+}
+
+#services {
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+#services .sectionTitle {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+#services .sectionTitle span:first-child {
+  margin-bottom: 15px;
+}
+#services .sectionTitle span:last-child {
+  font-weight: 400;
+}
+#services .servicesGroup {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+#services .servicesGroup .firstGroup {
+  display: flex;
+  flex-direction: column;
+}
+#services .servicesGroup .firstGroup .groupItem {
+  display: flex;
+  margin-bottom: 47px;
+}
+#services .servicesGroup .firstGroup .groupItem:nth-child(3) {
+  margin-bottom: 0px;
+}
+#services .servicesGroup .firstGroup .groupItem:nth-child(6) {
+  margin-bottom: 0px;
+}
+#services .servicesGroup .firstGroup .groupItem .fas, #services .servicesGroup .firstGroup .groupItem .far {
+  font-size: 40px;
+  color: #00a4ff;
+  width: 116px;
+}
+#services .servicesGroup .firstGroup .groupItem .itemContent .itemTitle {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 22px;
+  color: #000;
+  margin-bottom: 15px;
+}
+#services .servicesGroup .firstGroup .groupItem .itemContent .itemBody {
+  font-family: Lato;
+  font-weight: 600;
+  line-height: 25px;
+  font-size: 17px;
+  color: #000;
+  width: 330px;
+}
+#services .servicesGroup .secondGroup {
+  display: flex;
+  flex-direction: column;
+}
+#services .servicesGroup .secondGroup .groupItem {
+  display: flex;
+  margin-bottom: 47px;
+}
+#services .servicesGroup .secondGroup .groupItem:nth-child(3) {
+  margin-bottom: 0px;
+}
+#services .servicesGroup .secondGroup .groupItem:nth-child(6) {
+  margin-bottom: 0px;
+}
+#services .servicesGroup .secondGroup .groupItem .fas, #services .servicesGroup .secondGroup .groupItem .far {
+  font-size: 40px;
+  color: #00a4ff;
+  width: 116px;
+}
+#services .servicesGroup .secondGroup .groupItem .itemContent .itemTitle {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 22px;
+  color: #000;
+  margin-bottom: 15px;
+}
+#services .servicesGroup .secondGroup .groupItem .itemContent .itemBody {
+  font-family: Lato;
+  font-weight: 600;
+  line-height: 25px;
+  font-size: 17px;
+  color: #000;
+  width: 330px;
+}
+
+#price {
+  padding: 94px 0px;
+  background: url("../img/priceFirstBg.png") no-repeat top;
+  background-size: 100%;
+  position: relative;
+}
+#price .sectionTitle {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 70px;
+}
+#price .sectionTitle span:first-child {
+  margin-bottom: 15px;
+}
+#price .sectionTitle span:last-child {
+  font-weight: 400;
+}
+#price .priceGroup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#price .priceGroup .priceItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: #fff;
+  padding: 35px 80px;
+  border-radius: 20px;
+  position: relative;
+  z-index: 2;
+  margin-right: 50px;
+}
+#price .priceGroup .priceItem .fas {
+  font-size: 50px;
+  color: #373737;
+  margin-bottom: 20px;
+}
+#price .priceGroup .priceItem .priceTitle {
+  font-family: Montserrat;
+  font-weight: 900;
+  font-size: 24px;
+  color: #000;
+  width: 250px;
+}
+#price .priceGroup .priceItem .pricePrice {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 30px;
+  color: #000;
+  background: #f0d839;
+  position: absolute;
+  width: 102%;
+  padding: 20px 0px;
+  top: 35%;
+  right: -1%;
+}
+#price .priceGroup .priceItem .priceSkills {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 140px;
+}
+#price .priceGroup .priceItem .priceSkills .skillsItem {
+  display: flex;
+  margin-bottom: 3px;
+}
+#price .priceGroup .priceItem .priceSkills .skillsItem .fas {
+  font-size: 20px;
+  color: #00a4ff;
+  margin-right: 15px;
+}
+#price .priceGroup .priceItem .priceSkills .skillsItem p {
+  font-family: Lato;
+  font-weight: 600;
+  font-size: 17px;
+  width: 150px;
+  color: #000;
+}
+#price .priceGroup .priceItem .priceSkills .skillsItem:last-child {
+  margin-bottom: 0px;
+}
+#price .priceGroup .priceItem:last-child {
+  margin-right: 0px;
+}
+#price .blueBg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #00a4ff;
+  width: 100%;
+  height: 30%;
+  z-index: 1;
+}
+
+#agent {
+  padding: 100px 0px;
+}
+#agent .agentGroup {
+  display: flex;
+  justify-content: center;
+}
+#agent .agentGroup .agentImg {
+  margin-right: 85px;
+}
+#agent .agentGroup .agentContent .sectionTitle {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+#agent .agentGroup .agentContent .sectionTitle span {
+  margin-bottom: 15px;
+}
+#agent .agentGroup .agentContent .sectionTitle span:last-child {
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+#agent .agentGroup .agentContent .agentTriggers {
+  display: flex;
+  margin-bottom: 65px;
+  width: 100%;
+  border: 2px solid #00a4ff;
+}
+#agent .agentGroup .agentContent .agentTriggers .triggersItem {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 33.3%;
+  padding: 28px 54px;
+  transition: all 0.2s linear;
+}
+#agent .agentGroup .agentContent .agentTriggers .triggersItem.active {
+  background: #00a4ff;
+  transition: all 0.2s linear;
+}
+#agent .agentGroup .agentContent .agentTriggers .triggersItem.active .fas {
+  color: #fff;
+}
+#agent .agentGroup .agentContent .agentTriggers .triggersItem.active .agentTriggerBody {
+  color: #fff;
+}
+#agent .agentGroup .agentContent .agentTriggers .triggersItem.active:hover {
+  background: #00a4ff;
+}
+#agent .agentGroup .agentContent .agentTriggers .triggersItem.active:hover .fas {
+  color: #fff;
+}
+#agent .agentGroup .agentContent .agentTriggers .triggersItem.active:hover .agentTriggerBody {
+  color: #fff;
+}
+#agent .agentGroup .agentContent .agentTriggers .triggersItem.active::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top: 50px solid white;
+  border-left: 40px solid #00a4ff;
+  border-bottom: 46px solid white;
+  width: 0;
+}
+#agent .agentGroup .agentContent .agentTriggers .triggersItem:first-child {
+  padding-left: 29px;
+}
+#agent .agentGroup .agentContent .agentTriggers .triggersItem:hover {
+  background: #e4e4e4;
+}
+#agent .agentGroup .agentContent .agentTriggers .triggersItem .fas {
+  font-size: 40px;
+  color: #373737;
+  margin-right: 15px;
+}
+#agent .agentGroup .agentContent .agentTriggers .triggersItem .agentTriggerBody {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 27px;
+  color: #373737;
+}
+#agent .agentGroup .agentContent .agentBody {
+  font-family: Lato;
+  font-weight: 600;
+  line-height: 25px;
+  font-size: 17px;
+  color: #000;
+  width: 630px;
+  margin-bottom: 80px;
+}
+#agent .agentGroup .agentContent .agentBtn {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 15px;
+  color: #000;
+  background: #f2da39;
+  border: 2px solid #f2da39;
+  padding: 15px 55px;
+  border-radius: 5px;
+  transition: all 0.2s linear;
+}
+#agent .agentGroup .agentContent .agentBtn:hover {
+  background: transparent;
+}
+
+#tours {
+  padding: 100px 0px 130px 0px;
+  background: url("../img/toursBg.png") no-repeat center;
+  background-size: 100%;
+  position: relative;
+}
+#tours .blueBg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #00a4ff;
+  width: 100%;
+  height: 20%;
+  z-index: 1;
+}
+#tours .sectionTitle {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 70px;
+  text-align: center;
+}
+#tours .sectionTitle span {
+  margin-bottom: 15px;
+}
+#tours .sectionTitle span:last-child {
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+#tours .toursGroup {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+#tours .toursGroup .tourItem {
+  background: #fff;
+  width: 33%;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 10;
+}
+#tours .toursGroup .tourItem img {
+  width: 100%;
+  height: 320px;
+  margin-bottom: 20px;
+}
+#tours .toursGroup .tourItem .itemContent {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+#tours .toursGroup .tourItem .itemContent .itemTitle {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 17px;
+}
+#tours .toursGroup .tourItem .itemContent .itemTitle span {
+  margin-bottom: 10px;
+}
+#tours .toursGroup .tourItem .itemContent .itemTitle span:first-child {
+  font-family: Montserrat;
+  font-size: 20px;
+  color: #000;
+}
+#tours .toursGroup .tourItem .itemContent .itemTitle span:last-child {
+  font-family: Montserrat;
+  font-weight: 900;
+  font-size: 28px;
+  color: #000;
+  margin-bottom: 0px;
+}
+#tours .toursGroup .tourItem .itemContent .itemBody {
+  font-family: Lato;
+  line-height: 25px;
+  font-weight: 600;
+  font-size: 17px;
+  color: #000;
+  width: 222px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+#tours .toursGroup .tourItem .itemContent .itemCost {
+  font-family: Montserrat;
+  font-weight: 900;
+  font-size: 30px;
+  color: #000;
+  margin-bottom: 15px;
+}
+#tours .toursGroup .tourItem .itemContent .itemBtn {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 13px;
+  color: #000;
+  border-radius: 4px;
+  width: 148px;
+  height: 38px;
+  border: 2px solid #f5dd3a;
+  background: #f5dd3a;
+  transition: all 0.2s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+#tours .toursGroup .tourItem .itemContent .itemBtn:hover {
+  background: transparent;
+}
+#tours .toursGroup .tourItem:nth-child(1) {
+  margin-right: 160px;
+}
+#tours .toursGroup .tourItem:nth-child(2) {
+  top: -20px;
+  z-index: 15;
+  position: absolute;
+  padding-bottom: 80px;
+}
+#tours .toursGroup .tourItem:nth-child(2) .itemBody {
+  line-height: 30px;
+  width: 280px;
+}
+#tours .toursGroup .tourItem:nth-child(2) .itemCost {
+  margin-bottom: 30px;
+}
+#tours .toursGroup .tourItem:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  border-top: 65px solid transparent;
+  border-right: 205px solid #00a4ff;
+  border-top: 65px solid transparent;
+  border-left: 205px solid #00a4ff;
+  width: 0;
+}
+#tours .toursGroup .tourItem:nth-child(3) {
+  margin-left: 160px;
+}
+
+#skillsInfo {
+  background: url("../img/skillsBg.png") no-repeat center;
+  background-size: 100%;
+  padding: 106px 0px 76px 0px;
+}
+#skillsInfo .sectionTitle {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 60px;
+}
+#skillsInfo .sectionTitle span {
+  margin-bottom: 15px;
+}
+#skillsInfo .sectionTitle span:last-child {
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+#skillsInfo .skillTriggers {
+  display: flex;
+  justify-content: center;
+}
+#skillsInfo .skillTriggers .triggersItem {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 40px;
+  position: relative;
+}
+#skillsInfo .skillTriggers .triggersItem .triggerBtn {
+  position: absolute;
+  top: 49%;
+  left: 26%;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 15px;
+  color: #000;
+  border-radius: 5px;
+  width: 168px;
+  height: 38px;
+  background: #f2d939;
+  border: 2px solid #f2d939;
+  transition: all 0.2s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#skillsInfo .skillTriggers .triggersItem .triggerBtn:hover {
+  background: #fff;
+}
+#skillsInfo .skillTriggers .triggersItem .triggerContent {
+  padding: 60px 0px 40px 0px;
+}
+#skillsInfo .skillTriggers .triggersItem .triggerContent .triggerTitle {
+  font-family: Montserrat;
+  font-weight: 900;
+  font-size: 25px;
+  color: #000;
+  margin-bottom: 15px;
+}
+#skillsInfo .skillTriggers .triggersItem .triggerContent .triggerBody {
+  font-family: Lato;
+  font-weight: 600;
+  line-height: 25px;
+  font-size: 17px;
+  color: #000;
+  width: 270px;
+  margin: auto;
+}
+
+#newCard {
+  padding: 225px 0px 170px 0px;
+}
+#newCard .cardGroup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#newCard .cardGroup .cardContent {
+  padding: 40px 40px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-left: -100px;
+}
+#newCard .cardGroup .cardContent .contentTitle {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 35px;
+}
+#newCard .cardGroup .cardContent .contentTitle span {
+  font-family: Montserrat;
+  font-weight: 900;
+  font-size: 37px;
+  color: #000;
+  margin-bottom: 15px;
+}
+#newCard .cardGroup .cardContent .contentTitle span:last-child {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+#newCard .cardGroup .cardContent .contentTriggers {
+  display: flex;
+  margin-bottom: 35px;
+}
+#newCard .cardGroup .cardContent .contentTriggers .triggersItem {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-right: 70px;
+}
+#newCard .cardGroup .cardContent .contentTriggers .triggersItem .fas {
+  font-size: 30px;
+  color: #00a4ff;
+  margin-bottom: 10px;
+}
+#newCard .cardGroup .cardContent .contentTriggers .triggersItem .itemBody {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 20px;
+  color: #000;
+}
+#newCard .cardGroup .cardContent .contentBody {
+  font-family: Lato;
+  font-weight: 600;
+  line-height: 25px;
+  font-size: 17px;
+  color: #000;
+  width: 470px;
+  margin-bottom: 30px;
+}
+#newCard .cardGroup .cardContent .constAndBtn {
+  display: flex;
+  align-items: center;
+}
+#newCard .cardGroup .cardContent .constAndBtn .contentCost {
+  font-family: Montserrat;
+  font-weight: 900;
+  font-size: 50px;
+  color: #000;
+  margin-right: 60px;
+}
+#newCard .cardGroup .cardContent .constAndBtn .contentBtn {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 15px;
+  color: #000;
+  width: 168px;
+  height: 40px;
+  border: 2px solid #f3da39;
+  background: #f3da39;
+  transition: all 0.2s linear;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#newCard .cardGroup .cardContent .constAndBtn .contentBtn:hover {
+  background: #fff;
+}
