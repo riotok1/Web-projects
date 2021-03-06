@@ -945,3 +945,188 @@ h1, h2, h3, h4, h5, h6 {
 #newCard .cardGroup .cardContent .constAndBtn .contentBtn:hover {
   background: #fff;
 }
+
+#reviews {
+  background: url("../img/reviewsBg.png") no-repeat center;
+  background-size: 100%;
+  padding: 100px 0px 80px 0px;
+}
+#reviews .sectionTitle {
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 70px;
+}
+#reviews .sectionTitle span {
+  margin-bottom: 15px;
+}
+#reviews .sectionTitle span:last-child {
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+#reviews .sectionBody {
+  font-family: Lato;
+  font-weight: 600;
+  line-height: 30px;
+  font-size: 17px;
+  color: #fff;
+  width: 970px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 25px;
+}
+#reviews .starsGroup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+#reviews .starsGroup .fas {
+  font-size: 20px;
+  color: #f2da39;
+  margin-right: 15px;
+}
+#reviews .starsGroup .fas:last-child {
+  margin-right: 0px;
+}
+#reviews .personGroup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#reviews .personGroup img {
+  margin-right: 15px;
+}
+#reviews .personGroup .personContent .personTitle {
+  font-family: Montserrat;
+  font-weight: 900;
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+#reviews .personGroup .personContent .personBody {
+  font-family: Montserrat;
+  font-size: 15px;
+  color: #fff;
+}
+
+#journey {
+  position: relative;
+}
+#journey .firstGroup {
+  padding: 140px 0px 300px 0px;
+  background: url("../img/gorImg.png") no-repeat center;
+  background-size: 100%;
+  margin-bottom: 80px;
+}
+#journey .sectionTitle {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+#journey .sectionTitle span {
+  margin-bottom: 15px;
+}
+#journey .sectionTitle span:last-child {
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+#journey .navGroup {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  left: 46%;
+  bottom: 390px;
+}
+#journey .navGroup .fas {
+  border-radius: 10px;
+  color: #f0d839;
+  font-size: 200px;
+}
+#journey .contactsGroup {
+  display: flex;
+  justify-content: space-between;
+}
+#journey .contactsGroup .groupItem {
+  display: flex;
+}
+#journey .contactsGroup .groupItem .fas, #journey .contactsGroup .groupItem .far {
+  font-size: 50px;
+  margin-right: 25px;
+  color: #262626;
+}
+#journey .contactsGroup .groupItem .itemTitle {
+  font-family: Lato;
+  font-weight: bold;
+  font-size: 17px;
+  color: #000;
+  margin-bottom: 20px;
+}
+#journey .contactsGroup .groupItem .itemBody {
+  display: flex;
+  flex-direction: column;
+}
+#journey .contactsGroup .groupItem .itemBody span {
+  font-family: Lato;
+  font-size: 16px;
+  color: #000;
+}
+#journey .contactsGroup .groupItem .itemBody span:first-child {
+  margin-bottom: 10px;
+}
+#journey .socialGroup {
+  display: flex;
+  justify-content: center;
+  margin-top: 110px;
+  padding-bottom: 80px;
+}
+#journey .socialGroup .socialItem {
+  cursor: pointer;
+  width: 65px;
+  height: 65px;
+  border: 3px solid #f0d839;
+  transition: all 0.2s linear;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-right: 35px;
+}
+#journey .socialGroup .socialItem:hover {
+  background: #f0d839;
+}
+#journey .socialGroup .socialItem:hover .itemLink .fab, #journey .socialGroup .socialItem:hover .itemLink .fas {
+  color: #fff;
+}
+#journey .socialGroup .socialItem:last-child {
+  margin-right: 0px;
+}
+#journey .socialGroup .socialItem .itemLink .fab, #journey .socialGroup .socialItem .itemLink .fas {
+  transition: all 0.2s linear;
+  color: #353535;
+  font-size: 29px;
+}
+
+#footer {
+  padding: 60px 0px;
+  background: #f0d839;
+}
+#footer .footerTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#footer .footerTitle span {
+  font-family: Times New Roman;
+  font-size: 17px;
+  color: #000;
+}
+#footer .footerTitle span:first-child {
+  margin-bottom: 15px;
+}
